@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '9fd1d7e6-fd60-40da-a1f3-bc1247b1ed0d'
   imageRepository: 'javascriptdockerappnew'
   containerRegistry: 'k8strainingbham.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '**/app/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'k8strainingbham17836e7a-auth'
 
