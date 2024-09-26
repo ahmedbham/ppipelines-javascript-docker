@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: javascriptdockerappnew 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: javascriptdockerappnew
+  template:
+    metadata:
+      labels:
+        app: javascriptdockerappnew 
+    spec:
+      containers:
+        - name: javascriptdockerappnew 
+          image: k8strainingbham.azurecr.io/javascriptdockerappnew
+          ports:
+          - containerPort: 5000
